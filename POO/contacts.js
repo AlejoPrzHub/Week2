@@ -5,16 +5,16 @@ let Persona = personas.Person
 
 class Contacts 
 {
-    constructor() 
+    constructor()
 {
-    this.array = [Persona,Persona,Persona];
+    this.array = [];
 }
 
 printPersons()
 {
     for(let i = 0 ; i < this.array.length ; i++)
     {
-        console.log(this.array[i].printAll); 
+        this.array[i].printAll(); 
     }
 
     // this.array.forEach(datos =>{console.log(datos)})

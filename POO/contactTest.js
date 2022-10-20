@@ -11,7 +11,10 @@ let juanito = new persona("gomez",60,186,80,"largo","azul","azules",["cocinar","
 
 
 
-let libreta = new contacto(juan,juanita,juanito);
+let libreta = new contacto();
+libreta.array.push(juan);
+libreta.array.push(juanita);
+libreta.array.push(juanito);
 
 libreta.printPersons();
 // console.log(libreta);
