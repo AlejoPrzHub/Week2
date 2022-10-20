@@ -14,4 +14,8 @@ agenda.people.push(person2);
 agenda.people.push(person3);
                 
 agenda.printCalendar();
+
+
+
+
                 
