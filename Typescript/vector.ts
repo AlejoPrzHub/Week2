@@ -15,45 +15,48 @@ export class Vector
 
     print(){console.log(this.elements)};
 
-    add(v1:Vector)
+    add(v1:Vector):number[]
     {
         let respuesta:number[];
         respuesta = [];
         for(let i=0;i<v1.elements.length;i++)
         {
-            respuesta[i]=v1[i] + this.elements[i];
+            respuesta[i]=v1.elements[i] + this.elements[i];
         }
-        console.log(respuesta)
+        return respuesta
     }
 
-    subs(v1:Vector)
+    subs(v1:Vector):number[]
     {
         let respuesta:number[];
         respuesta = [];
         for(let i=0;i<v1.elements.length;i++)
         {
-            respuesta[i]=v1[i] - v1.elements[i];
+            respuesta[i]=v1.elements[i] - this.elements[i];
         }
-        console.log(respuesta)
+        return respuesta
     }
 
-    mult(v1:Vector)
+    mult(v1:Vector):number[]
     {
         let respuesta:number[];
         respuesta = [];
         for(let i=0;i<v1.elements.length;i++)
         {
-            respuesta[i]=v1[i] * v1.elements[i];
+            respuesta[i]=v1.elements[i] * this.elements[i];
         }
-        console.log(respuesta)
+        return respuesta
     }
 
-    multNumber(n:number)
+    multNumber(n:number):number[]
     {
-        for(let i =0;i<=n;i++)
+        let respuesta:number[];
+        respuesta = [];
+        for(let i =0;i<this.elements.length;i++)
         {
-           return n * this.elements[i]
+            respuesta[i]= n * this.elements[i]
         }
+        return respuesta
     }
 
 }
